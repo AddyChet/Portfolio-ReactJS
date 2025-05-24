@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -6,6 +6,7 @@ const Navbar = () => {
   const [isSectionActive, setIsSectionActive] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -17,6 +18,10 @@ const Navbar = () => {
   }, []);
 
   const handleSection = (menuId) => {
+    const section = document.getElementById(menuId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
     setIsSectionActive((prev) => (prev === menuId ? "" : menuId));
     setIsOpen(false);
   };
@@ -24,9 +29,8 @@ const Navbar = () => {
   const menuItems = [
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
-    { id: "experience", label: "Experience" },
     { id: "work", label: "Projects" },
-    { id: "education", label: "Education" },
+    {id : "contact", label : "Contact"}
   ];
 
   return (
@@ -56,12 +60,16 @@ const Navbar = () => {
                 isSectionActive === item.id ? "text-[#4286f4]" : ""
               }`}
             >
-              <button
-                className="cursor-pointer "
-                onClick={() => handleSection(item.id)}
+              <a
+                href={`#${item.id}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSection(item.id);
+                }}
+                className="cursor-pointer"
               >
                 {item.label}
-              </button>
+              </a>
             </li>
           ))}
         </ul>
@@ -84,7 +92,6 @@ const Navbar = () => {
           >
             <FaLinkedin size={24} />
           </a>
-
         </div>
 
         {/* mobile view */}
@@ -115,9 +122,15 @@ const Navbar = () => {
                   isSectionActive === item.id ? "text-[#4286f4]" : ""
                 }`}
               >
-                <button onClick={() => handleSection(item.id)}>
+                <a
+                  href={`#${item.id}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleSection(item.id);
+                  }}
+                >
                   {item.label}
-                </button>
+                </a>
               </li>
             ))}
             <div className="flex space-x-4">

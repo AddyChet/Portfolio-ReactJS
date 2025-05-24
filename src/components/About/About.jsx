@@ -14,11 +14,14 @@ const About = () => {
           id="tsparticles"
           particlesLoaded={particlesLoaded}
           options={options}
+          className="pointer-events-none"
+          
         />
       )}
+
       <section
         id="about"
-        className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32"
+        className="py-18 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32"
       >
       <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-5">
         {/* Left Side */}
@@ -37,7 +40,7 @@ const About = () => {
             <ReactTypingEffect
               text={[
                 "Fullstack Developer",
-                "App Developer",
+                "Frontend Developer",
                 "UI/UX Designer",
                 "Coder",
               ]}
@@ -53,7 +56,7 @@ const About = () => {
 
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am an entry-level full-stack developer . I love building web apps
+            I love building web apps
             that are smooth, functional, and user-friendly. While I'm still
             learning and growing, I'm excited to tackle new challenges, write
             clean code, and work on cool projects. Always up for brainstorming
@@ -62,7 +65,7 @@ const About = () => {
 
           {/* Resume Button */}
           <a
-            href=""
+            href="https://drive.google.com/file/d/13fLPvlnwxyq15gNRMQrMOYNnkG6LN37R/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full cursor-pointer mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"

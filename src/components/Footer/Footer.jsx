@@ -1,5 +1,4 @@
-
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   // Smooth scroll function
@@ -21,14 +20,13 @@ const Footer = () => {
           {[
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
-            { name: "Experience", id: "experience" },
-            { name: "Projects", id: "projects" },
-            { name: "Education", id: "education" },
+            { name: "Projects", id: "work" },
+            { name: "Contact", id: "contact" },
           ].map((item, index) => (
             <button
               key={index}
               onClick={() => handleScroll(item.id)}
-              className="hover:text-blue-500 text-sm sm:text-base my-1"
+              className="hover:text-blue-500 text-sm sm:text-base my-1 cursor-pointer"
             >
               {item.name}
             </button>
@@ -39,8 +37,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
             { icon: <FaTwitter />, link: "" },
-            { icon: <FaLinkedin />, link: "" }
-            
+            { icon: <FaLinkedin />, link: "" },
           ].map((item, index) => (
             <a
               key={index}
