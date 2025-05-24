@@ -85,7 +85,7 @@ const Navbar = () => {
             <FaGithub size={24} />
           </a>
           <a
-            href="https://www.linkedin.com/in/adchet"
+            href="https://www.linkedin.com/in/adarshbhandari1002/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#4286f4]"
@@ -143,7 +143,7 @@ const Navbar = () => {
                 <FaGithub size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/tarun-kaushik-553b441a4"
+                href="https://www.linkedin.com/in/adarshbhandari1002/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
