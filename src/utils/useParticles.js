@@ -14,7 +14,7 @@ export const useParticles = () => {
   }, []);
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    
   };
 
   const options = useMemo(
