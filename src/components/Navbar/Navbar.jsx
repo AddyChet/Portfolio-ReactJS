@@ -150,19 +150,7 @@ const Navbar = () => {
               >
                 <FaLinkedin size={24} />
               </a>
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
-                style={{
-                  background: "linear-gradient(90deg, #a1cfff, #4286f4)",
-                  boxShadow:
-                    "0 0 2px #a1cfff, 0 0 2px #8245ec, 0 0 10px #a1cfff",
-                }}
-              >
-                DOWNLOAD CV
-              </a>
+              
             </div>
           </ul>
         </div>
