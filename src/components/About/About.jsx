@@ -57,10 +57,7 @@ const About = () => {
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
             I love building web apps
-            that are smooth, functional, and user-friendly. While I'm still
-            learning and growing, I'm excited to tackle new challenges, write
-            clean code, and work on cool projects. Always up for brainstorming
-            ideas and figuring out smart solutions!
+            that are smooth, functional, and user-friendly.
           </p>
 
           {/* Resume Button */}
