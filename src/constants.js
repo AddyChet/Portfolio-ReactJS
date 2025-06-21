@@ -31,6 +31,7 @@ import restLogo from './assets/work_logo/restLogo.png';
 import secondBrain from './assets/work_logo/secondBrain.png';
 
 import sendifyAppLogo from './assets/work_logo/sendifyApp.png'
+import blogLogo from "./assets/work_logo/blog.png"
 
 
 export const SkillsInfo = [
@@ -95,6 +96,17 @@ export const SkillsInfo = [
     },
     {
       id: 1,
+      title: "Full Stack Blog Application",
+      description:
+        "This full-featured blogging platform empowers users to craft, manage, and share content effortlessly. Built with the MERN stack and enhanced by Firebase and Cloudinary integrations, it delivers a seamless experience from post creation to publishing.",
+      image: blogLogo,
+      tags: ["React JS", "TailwindCss", "ContextApi", "Firebase", "NodeJs", "ExpressJs", "MongoDb", "Framer-Motion"],
+      github: "https://github.com/AddyChet/MERN-Blog-App",
+      webapp: "",
+      ongoing : true
+    },
+    {
+      id: 2,
       title: "Second Brain",
       description:
         "Second Brain is a smart and intuitive tool designed to help users save and organize links they want to remember for future reference.",
@@ -105,7 +117,7 @@ export const SkillsInfo = [
       ongoing : true
     },
     {
-      id: 2,
+      id: 3,
       title: "Tenzies React Game",
       description:
         "Tenzies React Game is a fun and addictive dice-rolling challenge designed to test your quick decision-making skills. Built using React, this game tracks your best time, highest score, and the number of dice rolled as you aim for a perfect match.",
@@ -116,7 +128,7 @@ export const SkillsInfo = [
       ongoing : false
     },
     {
-      id: 3,
+      id: 4,
       title: "Complex Palindrom Checker",
       description:
         "Complex Palindrome Checker is a powerful tool designed to analyze and verify palindromes beyond simple word reversals. Unlike traditional palindrome checkers, this advanced version determines whether a given word or phrase is a palindrome and also evaluates if it can be transformed into one through character swaps.",
@@ -128,7 +140,7 @@ export const SkillsInfo = [
     },
 
     {
-      id: 4,
+      id: 5,
       title: "Rest Countries API",
       description:
         "Rest Countries API is a powerful and easy-to-use API that provides detailed information about countries worldwide. It allows developers to fetch data such as country names, capitals, population, currencies, languages, flags, and more.",
