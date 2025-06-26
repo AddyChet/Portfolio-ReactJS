@@ -26,10 +26,9 @@ import postgreLogo from "./assets/tech_logo/postgre.png";
 
 // Project Section Logo's
 import tenziesLogo from "./assets/work_logo/tenziesLogo.png";
-import palinLogo from "./assets/work_logo/palinLogo.png";
-import restLogo from "./assets/work_logo/restLogo.png";
 import secondBrain from "./assets/work_logo/secondBrain.png";
-import gemini from "./assets/work_logo/gemini.png`";
+import gemini from "./assets/work_logo/gemini.png";
+import realEstate from "./assets/work_logo/realestate.png";
 import sendifyAppLogo from "./assets/work_logo/sendifyApp.png";
 import blogLogo from "./assets/work_logo/blog.png";
 
@@ -145,7 +144,7 @@ export const projects = [
     title: "Gemini Clone",
     description:
       "An AI-powered chat interface inspired by Gemini, built using React and Tailwind CSS. Integrates DeepSeek for advanced language responses and Framer Motion for elegant UI transitions. Features include animated message flow, prompt history, and a sleek dark mode experience.",
-    image: palinLogo,
+    image: gemini,
     tags: ["React", "Tailwind CSS", "DeepSeek", "Vite"],
     github: "https://github.com/AddyChet/Gemini-Clone",
     webapp: "",
@@ -156,7 +155,7 @@ export const projects = [
     title: "Real Estate LandingPage",
     description:
       "A responsive and visually compelling real estate landing page showcasing property listings and brand highlights. Built with React and styled using Tailwind CSS, with Framer Motion adding smooth transitions and scroll animations.",
-    image: restLogo,
+    image: realEstate,
     tags: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
     github: "https://github.com/AddyChet/Real-Estate-Landing-Page",
     webapp: "https://real-estate-landing-page-iota.vercel.app/",
